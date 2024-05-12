@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'layout' => 'components.layouts.dashboard',
+    'layout' => 'components.layout.app',
 
     /*
     |--------------------------------------------------------------------------
