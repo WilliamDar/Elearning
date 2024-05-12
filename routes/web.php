@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', App\Http\Livewire\Dashboard::class)->name('dashboard');
+Route::get('/courses', App\Http\Livewire\Courses::class)->name('courses');
+Route::get('/news', App\Http\Livewire\News::class)->name('news');
+Route::get('/contact', App\Http\Livewire\Contact::class)->name('contact');
